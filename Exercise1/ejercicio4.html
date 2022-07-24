@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 4</title>
+</head>
+<body>
+  <h1>Formulario de registro</h1>
+  <form>
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre">
+    </div>
+    <br>
+    <div>
+      Sexo:
+      <input type="radio" name="sexo" id="sexo" value="hombre">
+      <label for="sexo">Hombre</label>
+      <input type="radio" name="sexo" id="sexo" value="mujer">
+      <label for="sexo">Mujer</label>
+    </div>
+    <br>
+    <div>
+      <label for="correo">Correo:</label>
+      <input type="email" name="correo" id="correo">
+    </div>
+    <br>
+    <div>
+      <label for="poblacion">Población:</label>
+      <select name="poblacion" id="poblacion">
+        <option value="bogota">Bogotá</option>
+        <option value="buenos aires">Buenos Aires</option>
+        <option value="lima">Lima</option>
+        <option value="la paz">La Paz</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="descripcion">Descripción:</label>
+      <textarea name="descripcion" id="descripcion" cols="50" rows="5"></textarea>
+    </div>
+    <br>
+    <div>
+      <input type="checkbox" name="novedades" id="novedades">
+      <label for="novedades">Deseo recibir información sobre novedades y ofertas</label>
+    </div>
+    <br>
+    <div>
+      <input type="checkbox" name="novedades" id="terminos">
+      <label for="terminos">Declaro haber leído y aceptado las condiciones generales del programa y la normativa sobre protección de datos</label>
+    </div>
+    <br>
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
