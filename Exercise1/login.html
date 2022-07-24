@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In Card</title>
+  <style>
+    *{
+      padding:0;
+      margin:0;
+      box-sizing:border-box;
+    }
+    html{
+      width: 100vw;
+      height: 100%;
+    }
+    body{
+      height: 100%;
+      font-size: 16px;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    main{
+      border: 2px solid gray;
+      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.596);
+      width: 16rem;
+      height: max-content;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+    }
+    main>img{
+      width: 10rem;
+      color: aquamarine;
+    }
+    main>form *{
+      width: 100%;
+      font-size: 1.3rem;
+    }
+    form div, form>input, form>button{
+      margin-top: 10px;
+    }
+    input{
+      padding: 8px;
+    }
+    input[type="submit"]{
+      background-color: blue;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+    }
+    form>button{
+      font-size: 0.8rem;
+      border: 1px solid black;
+      border-radius: 5px;
+      width: fit-content;
+      padding: 3px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="user-svg.svg" alt="user icon">
+    <h1>Iniciar Sesión</h1>
+    <form action="">
+      <div>
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <label for="password"></label>
+        <input type="password" name="password" id="password" placeholder="Password">
+      </div>
+      <input type="submit" value="ENTRAR">
+      <button>Olvidé mi password</button>
+    </form>
+  </main>
+</body>
+</html>
